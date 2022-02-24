@@ -14,10 +14,6 @@ var corsOptions = {
 
 app.use(cors(corsOptions))
 
-
-//db.sequelize.sync({ force: true });
-
-
 app.get('/', (req, res) => {
     res.status(200).send('Welcome to BackEnd Application.')
 })
